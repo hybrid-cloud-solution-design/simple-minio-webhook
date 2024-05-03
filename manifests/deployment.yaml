@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minio-webhook
+  labels:
+    app: minio-webhook
+spec:
+  selector:
+    matchLabels:
+      app: minio-webhook
+  template:
+    metadata:
+      annotations:
+        alpha.image.policy.openshift.io/resolve-names: '*'    
+      labels:
+        app: minio-webhook
+    spec:
+      containers:
+      - name: minio-webhook-container
+        image: minio-webhook
+        ports:
+        - containerPort: 8081

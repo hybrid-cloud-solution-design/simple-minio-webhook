@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: minio-webhook
+spec:
+  path: /
+  to:
+    kind: Service
+    name: minio-webhook-service
+  port:
+    targetPort: 8081
