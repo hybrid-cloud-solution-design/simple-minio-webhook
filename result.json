@@ -1,0 +1,39 @@
+{
+    "EventName": "s3:ObjectCreated:Put",
+    "Key": "test-gas/upload/metadata_of_product.json",
+    "Records": [
+        {
+            "eventVersion": "2.0",
+            "eventSource": "minio:s3",
+            "awsRegion": "",
+            "eventTime": "2024-05-08T10:18:58.613Z",
+            "eventName": "s3:ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "03E643E5z2oiq4B0gbfamb9n"
+            },
+            "requestParameters": {
+                "principalId": "03E643E5z2oiq4B0gbfamb9n",
+                "region": "",
+                "sourceIPAddress": "172.30.161.0"
+            },
+            "responseElements": {
+                "x-amz-id-2": "dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8",
+                "x-amz-request-id": "17CD7C26A9C4C718",
+                "x-minio-deployment-id": "38d8a686-2b97-4039-a870-fab52a859a35",
+                "x-minio-origin-endpoint": "http://172.30.153.12:9000"
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "Config",
+                "bucket": {
+                    "name": "test-gas",
+                    "ownerIdentity": {
+                        "principalId": "03E643E5z2oiq4B0gbfamb9n"
+                    },
+                    "arn": "arn:aws:s3:::test-gas"
+                },
+                "object": {
+                    "key": "upload%2Fmetadata_of_product.json",
+                    "size": 309,
+                    "eTag": "ab057da9bf8bef2e9a44e79fd33633c8",
+                    "contentType": "application/json"...

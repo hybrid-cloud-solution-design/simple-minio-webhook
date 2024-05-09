@@ -20,3 +20,6 @@ spec:
         image: minio-webhook
         ports:
         - containerPort: 8081
+        envFrom:
+          - secretRef:
+              name: webhook-secret           
