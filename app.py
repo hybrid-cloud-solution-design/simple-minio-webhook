@@ -83,7 +83,7 @@ def main():
     print(metadatafile['tags'])
     tagsstr = str(metadatafile['tags']).replace('\'', '"')
     print(tagsstr)
-    dp_meta_json = "{\"tags\":\"" + tagsstr + ",\"providername\": \"" + metadatafile['providername'] + "\", \"provider\":\"mp_bk_large_bank_a\"}"
+    dp_meta_json = "{\"tags\":" + tagsstr + ",\"providername\": \"" + metadatafile['providername'] + "\", \"provider\":\"mp_bk_large_bank_a\"}"
     print(dp_meta_json)
 
     # load apifile from bucket
