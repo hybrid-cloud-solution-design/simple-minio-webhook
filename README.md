@@ -1,6 +1,8 @@
 # simple-minio-webhook
 
-# adding events
+Simple webhook implementation that receives events from Minio (s3).
+
+It reads the metadata file that describes REST API product and creates API and Product in the API Connect.
 
 
 # set destination webhook
@@ -12,4 +14,4 @@ Notifications are per bucket
 
 
 
-mc event add lh-s3/test-gas arn:minio:sqs::service:webhook --event put --suffix .json
+mc event add lh-s3/test-gas arn:minio:sqs::service:webhook --event put --suffix metadata_of_product.json

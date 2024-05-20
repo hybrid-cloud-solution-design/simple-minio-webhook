@@ -1,3 +1,7 @@
+# Copyright IBM Corp. 2024
+# 
+
+
 from flask import Flask, request, jsonify
 import os
 from dotenv import load_dotenv
